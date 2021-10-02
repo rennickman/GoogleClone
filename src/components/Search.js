@@ -5,7 +5,8 @@ import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router';
 
 import './Search.css';
-
+import { useStateValue } from '../StateProvider';
+import { actionTypes } from '../reducer';
 
 
 
@@ -13,6 +14,9 @@ const Search = ({ hideButtons = false }) => {
 
     // Store the text entered in search bar in state
     const [ input, setInput ] = useState('');
+
+    // Custom hook for dispatching to data layer
+    const [ {}, dispatch ] = useStateValue();
 
     // Browsers history
     const history = useHistory();
@@ -22,6 +26,12 @@ const Search = ({ hideButtons = false }) => {
     const search = e => {
         // Prevent a new page from opening
         e.preventDefault();
+
+        // Dispatch the search term into the data layer
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+            term: input
+        })
 
         // Open the results page
         history.push('/search');
