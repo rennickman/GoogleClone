@@ -1,0 +1,58 @@
+/* Homepage */
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header section */
+.home__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+/* Links in header section */
+.home__header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+
+/* Add hover effect for links */
+.home__header a:hover {
+    text-decoration: underline;
+}
+
+/* Right side of header */
+.home__headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+
+/* Add margin to the icon in header */
+.home__headerRight > .MuiSvgIcon-root {
+    margin-right: 20px;
+}
+
+
+
+
+.home__body {
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+/* Google logo */
+.home__body > img {
+    object-fit: contain;
+    height: 100px;
+}
+
