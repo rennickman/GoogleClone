@@ -1,0 +1,110 @@
+/* Header section */
+.searchPage__header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Google logo */
+.searchPage__logo {
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+/* Override styles previosly put on search bar */ 
+.searchPage__headerBody > .search > .search__input {
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+}
+
+/* Container for option icons */
+.searchPage__options {
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-top: 15px;
+}
+
+/* Hiding the default styling of the links */
+.searchPage__options a,
+.searchPage__optionsRight a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* Left and right containers */
+.searchPage__optionsRight,
+.searchPage__optionsLeft {
+    display: flex;
+}
+
+/* Add margin to the right container to seperate them */
+.searchPage__optionsRight {
+    margin-left: 80px;
+}
+
+/* Icon options */
+.searchPage__option {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Icon option links */
+.searchPage__option a {
+    margin-left: 5px;
+}
+
+/* Search result */
+.searchPage__result {
+    margin: 40px 0;
+}
+
+/* Search Information */
+.searchPage__resultCount {
+    color: #70757a;
+}
+
+/* Search results container */
+.searchPage__results {
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+/* Result picture */
+.searchPage__resultImage {
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Title of result */
+.searchPage__resultTitle {
+    text-decoration: none;
+}
+
+/* Add hover effect to title */
+.searchPage__resultTitle:hover {
+    text-decoration: underline;
+}
+
+/* Add font wieght to title */
+.searchPage__resultTitle > h2 {
+    font-weight: 500;
+}
+
+/* Snippet of information */
+.searchPage__resultSnippet {
+    margin-top: 10px;
+}

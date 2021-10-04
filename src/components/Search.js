@@ -21,6 +21,7 @@ const Search = ({ hideButtons = false }) => {
     // Browsers history
     const history = useHistory();
 
+    
 
     // Method for making a search
     const search = e => {
